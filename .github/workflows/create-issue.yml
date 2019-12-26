@@ -2,7 +2,7 @@ name: Create issue every hour
 
 on:
   schedule:
-  - cron: "10 * * * 1-5"
+  - cron: "35 * * * 1-5"
 
 
 jobs:
