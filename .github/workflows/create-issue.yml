@@ -1,0 +1,14 @@
+name: Create issue every hour
+
+on:
+  schedule:
+  - cron: "10 * * * 1-5"
+
+
+jobs:
+  createissue:
+    runs-on: [ubuntu-latest]
+    steps:
+    - uses: JasonEtco/create-an-issue@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
